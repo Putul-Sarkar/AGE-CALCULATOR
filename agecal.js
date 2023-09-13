@@ -37,10 +37,12 @@ function calculateage() {
         m3 = 11;
         y3--;
     }
+    // console.log(d3, m3, y3);
     result.innerHTML = "You are ${m3}month, ${d3}date and ${y3}years old";
-}
-function getDaysInMonth(year, month) {
-    return new Date(year, month, 0).getDate();
+
+    function getDaysInMonth(year, month) {
+        return new Date(month, year, 0).getDate();
+    }
 }
 
 
